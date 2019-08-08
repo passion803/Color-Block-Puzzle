@@ -1,0 +1,106 @@
+body {
+  background: #669999;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+div.tetrisGame {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+div.tetrisLeftPane div.tetrisUsage {
+  border-collapse: collapse;
+  margin: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.tetrisLeftPane div.tetrisUsage th,
+td {
+  text-align: center;
+  padding: 3px;
+}
+
+div.tetrisLeftPane div.tetrisUsage tr {
+  background-color: #d6d6c2;
+  border: 3px solid #3d3d29;
+
+}
+
+div.tetrisLeftPane div.tetrisUsage th {
+  background-color: #ff5c33;
+  color: black;
+}
+
+
+div.tetrisMiddlePane {
+
+  width: 300px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -225px 0 0 -150px;
+
+}
+
+div.tetrisMiddlePane div.tetrisBoard {
+
+  width: 300px;
+  /* 10 cols * 30px */
+  height: 450px;
+  /* 15 rows * 30px */
+}
+
+div.tetrisBlock {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border: 2px solid black;
+  background-color: #404040;
+}
+
+div.tetrisBlock.habitated {
+  border: 2px solid black;
+  background-color: #ff9900;
+}
+
+div.tetrisGame div.tetrisRightPane {
+  border-collapse: collapse;
+  margin: 5%;
+}
+
+div.tetrisRightPane div.tetrisScore {
+
+  position: relative;
+  background-color: #ff5c33;
+  border: 3px solid #3d3d29;
+  width: 200px;
+  height: 100px;
+  color: black;
+  font-weight: bold;
+  font-family: "Monospace", Times, serif;
+  font-size: 30px ;ㄐ
+  text-align: center;
+}
+
+div.tetrisRightPane div.tetrisPreview {
+  position: absolute;
+  border-collapse: collapse;
+  margin: 0%;
+  top:0px;
+
+  /* border: solid .2em #fff; */
+  right: 350px;
+  /* 4 cols * 30px */
+  height: 120px;
+  /* 4 rows * 30px */
+}
